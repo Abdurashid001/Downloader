@@ -24,15 +24,14 @@
         <form method="POST">
             {% csrf_token %}
             <div class="form">
-                <input type="text" name="url" placeholder="Video Linkini kiriting">
+                <input type="text" name="url" placeholder="Video Link">
                 <button id="get-video-info" class="btn btn-warning">Convert</button>
             </div>
         </form>
         {% load static %}
         <div class="video__info">
-            <img src="{% static 'image/1.jpg' %}" alt="video rasmi">
+            <img src="downloader">
             <h1 class="video__title">
-                Video sarlavhasi
             </h1>
         </div>
 
